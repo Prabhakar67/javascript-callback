@@ -9,7 +9,7 @@ function setArray(callback) {
         console.log('this is main function (delay 4 sec)');
         arr.push('Ajit');
         console.log(`'Ajit' is pushed into arr`);
-        callback();
+        callback(); // call callback function i.e. getArray after ajit is pushed
     }, 4000);
 }
 
