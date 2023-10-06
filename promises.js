@@ -1,6 +1,6 @@
 // promises
 
-let arr = ['Prabhakar', 'Shubham'];
+let arr = ['Prabhakar', 'Shubham', 'Akshay'];
 console.log('this is main array', arr);
 
 let myPromise = new Promise(function (resolve, reject) {
@@ -19,7 +19,7 @@ let myPromise = new Promise(function (resolve, reject) {
     }, 4000);
 })
 
-myPromise.then(handlefulfilled, handlerejected).catch(handlerejected).catch(handlerejected)
+myPromise.then(handlefulfilled, handlerejected).catch(handlerejected);
 
 // this is equivalent to callback function
 // let say this function fetches the array from server taking 1.5 sec
