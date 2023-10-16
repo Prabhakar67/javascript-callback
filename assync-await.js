@@ -16,9 +16,8 @@ async function myAsyncFunc() {
     })
 
     await myPromise;
-    // console.log(promiseResult);
 
-    console.log('promise is now resolved');
+    console.log('promise is now resolved (haulted block of code resumed)');
     setTimeout(() => {
         console.log('this is consuming code (delay 1.5 sec)');
         console.log('this is modified array', arr);
